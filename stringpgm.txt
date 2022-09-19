@@ -1,0 +1,93 @@
+1.//WAP to find upper and small leters
+
+class examplestr1 {
+
+  public static void main(String args[]) {
+
+  String str="Hi Hello Welcome To Strings";
+
+    int small=0,upper=0;
+   for(int i=0;i<str.length();i++){
+    char ch=str.charAt(i);
+
+     if(ch>='a' && ch<='z'){
+       small++;
+     }
+       else if(ch>='A' && ch<='Z'){
+        upper++;
+       }
+
+   }
+    
+         
+    System.out.println("smallleters: "+small);
+    System.out.println("upperleters: "+upper);
+    
+    
+  }
+}
+
+2.//WAP to find alphabet, digit, and special character
+
+class examplestr2 {
+
+  public static void main(String args[]) {
+
+  String str="Hi He56llo Welcome123 To@ Strings";
+
+    int digit=0,alphabet=0, specialchr=0;
+   for(int i=0;i<str.length();i++){
+    char ch=str.charAt(i);
+
+     if(ch>='a' && ch<='z' || ch>='A' && ch<='Z'){
+       alphabet++;
+     }
+       else if(ch>='0' && ch<='9'){
+        digit++;
+       }
+      else{
+        specialchr++;
+      }
+   }
+    
+         
+    System.out.println("alphabet: "+alphabet);
+    System.out.println("digit: "+digit);
+    System.out.println("specialchr: "+specialchr);
+    
+    
+  }
+}
+
+3. vowels and consontate
+
+class examplestr {
+
+  public static void main(String args[]) {
+
+  String str="hi hello welcome to strings";
+
+    int vcount=0,ccount=0;
+   for(int i=0;i<str.length();i++){
+    char ch=str.charAt(i);
+
+     if(ch>='A' && ch<='Z' || ch>='a' && ch<='z'){
+
+        if(ch=='A' || ch=='E' || ch=='I' || ch=='O' || ch=='U'|| ch=='a' || ch=='e' || ch=='i' || ch=='o' || ch=='u')
+        {
+          vcount++;
+        }
+       else{
+         ccount++;
+       }
+       
+     }
+
+     
+   }
+    System.out.println("Number of vowels: "+vcount);
+    System.out.println("Number of Consonents: "+ccount);
+    
+    
+  }
+}
